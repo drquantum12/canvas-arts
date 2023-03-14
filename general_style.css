@@ -1,0 +1,57 @@
+.nav-style{
+    background-color:rgb(35, 55, 103);
+}
+.add-component-btn{
+    position: fixed;
+    /* margin-top: 10px;
+    margin-left: 10px; */
+    top: 60px;
+    right: 20px;
+    z-index: 2;
+}
+.btn{
+    background-color: rgb(35, 55, 103);
+    color: aliceblue;
+}
+
+.main-art{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.heading-div{
+    text-align: center;
+}
+.heading{
+    color: aliceblue;
+    margin-left: 10px;
+}
+
+canvas{
+    margin-top: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    /* border-style: solid; */
+    /* background-color: black; */
+}
+
+.component-form{
+    padding: 25px 5px 5px 5px;
+    width: 40%;
+    text-align: center;
+    z-index: 3;
+    position: fixed;
+    left: 30%;
+    top: 30%;
+    border: 1px solid rgb(28, 28, 71);
+    box-shadow: inset rgb(28, 28, 71,0.5);
+    
+}
+
+.hide{
+    display: none;
+}
+
+/* .show{
+    display: block;
+} */
