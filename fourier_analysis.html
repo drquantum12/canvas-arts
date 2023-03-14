@@ -18,22 +18,39 @@
     <h5 class="heading">Scientific Canvas Arts</h5>
   </div>
 </nav>
+
 <button type="button" id="addComponent" class="btn btn-sm add-component-btn">Add Component</button>
+<button type="button" id="generateRandomComponent" class="btn btn-sm random-generate-btn">Generate Randomly</button>
+
+<!-- for add component -->
 <div id="component-form" class="component-form hide">
   <div class="mb-3 row">
     <label for="radius" class="col-sm-3 col-form-label">Radius</label>
     <div class="col-sm-8">
-      <input type="number" class="form-control" id="radius">
+      <input type="number" class="form-control" id="radius" value=100>
     </div>
   </div>
   <div class="mb-3 row">
     <label for="velocity" class="col-sm-3 col-form-label">angular velocity</label>
     <div class="col-sm-8">
-      <input type="number" class="form-control" id="velocity">
+      <input type="number" class="form-control" id="velocity" value=2>
     </div>
   </div>
   <button type="button" id="submitComponent" class="btn btn-sm component-submit-btn">submit</button>
 </div>
+
+<!-- for random generate -->
+<div id="random-component-form" class="component-form hide">
+  <div class="mb-3 row">
+    <label for="amount" class="col-sm-3 col-form-label">Number of components</label>
+    <div class="col-sm-8">
+      <input type="number" class="form-control" id="amount" value=4>
+    </div>
+  </div>
+  <button type="button" id="submitRandomComponent" class="btn btn-sm component-submit-btn">submit</button>
+  </div>
+
+
 <div class="main-art">
     <canvas id="layer1" style="z-index: 1; position: absolute;"></canvas>
     <canvas id="layer2" style="z-index: 2; position: absolute;"></canvas>
@@ -53,6 +70,7 @@
     -->
     <script>
       let componentFormState = false;
+      let randomComponentState = false;
 
       // handle's add component button
       $('#addComponent').click(function(){
@@ -65,6 +83,19 @@
           componentFormState = false;
         }
       });
+
+      // handle's random generate component button
+      $('#generateRandomComponent').click(function(){
+        if(!randomComponentState){
+          $('#random-component-form').removeClass('hide');
+          randomComponentState = true;
+        }
+        else{
+          $('#random-component-form').addClass('hide');
+          randomComponentState = false;
+        }
+      });
+
 
     </script>
   </body>
