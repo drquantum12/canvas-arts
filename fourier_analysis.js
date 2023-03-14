@@ -238,4 +238,4 @@ $('#submitRandomComponent').click(function () {
 
 
 // c.update();
-// animate();
+animate();
