@@ -13,8 +13,9 @@ layer1.width = Math.floor(width * scale);
 layer1.height = Math.floor(height * scale);
 ctx1.scale(scale, scale);
 
-const midx = layer1.width / 4;
-const midy = layer1.height / 4;
+
+const midx = layer1.width / (2*scale);
+const midy = layer1.height / (2*scale);
 
 // layer 2 for arrows
 const layer2 = document.getElementById("layer2");
