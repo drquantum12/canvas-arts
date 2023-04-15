@@ -10,7 +10,7 @@ body{
 .banner{
     width:100%;
     height:100vh;
-    background-image:linear-gradient(rgba(111, 124, 175, 0.69),rgba(42, 44, 82, 0.942));
+    background-image:linear-gradient(rgb(49, 159, 82),rgb(35, 103, 58));
     background-size:cover;
     background-position:center;
 }
@@ -18,9 +18,6 @@ body{
     width:85%;
     margin: auto;
     padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
 
 }
 
@@ -35,7 +32,7 @@ body{
     text-transform:uppercase;
 }
 .navbar ul li{
-    padding: .25rem 0;
+    /* padding: .25rem 0; */
     font-weight: 700;
     color: rgba(255,255,255,.5);
     background-color: transparent;
@@ -94,5 +91,12 @@ button:hover{
     border: 0;
 }    
 
-
+.profile-pic-container{
+    width: 100%;
+    height: auto;
+}
+.profile-pic{
+    height: 200px;
+    width: 200px;
+}
 
