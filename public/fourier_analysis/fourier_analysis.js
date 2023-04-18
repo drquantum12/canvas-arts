@@ -56,6 +56,7 @@ class Circle {
                 ctx1.lineTo(p2.x, p2.y);
                 // ctx1.strokeStyle = 'white'
                 ctx1.stroke();
+                ctx1.translate(-0.5,0);
                 // console.log(this.radius, 'working')
             }
             this.prev_point = p2;
@@ -196,6 +197,12 @@ $('#submitComponent').click(function () {
     componentFormState = false;
 });
 
+// functionality for cancel button
+$('#cancelRandomComponent').click(function(){
+    $('#random-component-form').addClass('hide');
+    componentFormState = false;
+});
+
 // handle's generate random submit
 $('#submitRandomComponent').click(function () {
     ctx1.clearRect(0,0,layer1.width,layer1.height);
@@ -235,6 +242,7 @@ $('#submitRandomComponent').click(function () {
     console.log(circles);
 
 })
+
 
 
 
